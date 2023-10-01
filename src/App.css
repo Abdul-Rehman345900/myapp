@@ -1,77 +1,126 @@
-/* CV.css */
-
-body {
-  font-family: Arial, sans-serif;
+*{
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  box-sizing: border-box;
+  /* border: solid  blue 2px; */
 }
+:root{
 
-.cv {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  --backgroud_color_1:#27374D;
+  --backgroud_color_2: #526D82;
+  --backgroud_color_3: #9DB2BF;
+  --backgroud_color_4: #bcc5cb;
+
+  --heading-size: 28px;
+
 }
+.container { 
 
-header {
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+    color:var(--backgroud_color_1);
+    font-family: Georgia, Times, 'Times New Roman', serif ;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--backgroud_color_1);
+
 }
-
-.container {
-  padding: 20px;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-h2 {
-  margin-bottom: 10px;
-  font-size: 1.5em;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-/* Style Contact Information */
-.contact-information ul {
-  margin: 0;
-  padding: 0;
-}
-
-.contact-information li {
+.abc{
   display: flex;
-  align-items: center;
+}
+.header {
+    text-align: center;
 }
 
-.contact-information li::before {
-  content: '•';
-  margin-right: 10px;
-  color: #007bff;
-  font-size: 1.5em;
+h3{
+   font-size: var(--heading-size);
+ 
+}
+.header img {
+  margin-top: 30px;
+    width:25%;
+    height: 48vh;
+    border-radius: 50%;
+    /* border:  #333 12px; */
+
 }
 
-/* Style Education, Work Experience, and Skills sections */
-.section {
+
+.sec_1{
+  display: flex;
+  justify-content: center;
+  gap: 30vh;
+  /* margin-top: 30px; */
+}
+.part_1{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
+  background-color:var(--backgroud_color_2);
+  margin: 30px;
+  border-radius: 10px;
+  padding: 1rem;
+box-shadow: 2 2 rgb(0, 0, 0,0.1);
+}
+.name {
+    font-size: var(--heading-size);
+    margin: 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--backgroud_color_4);
+}
+.job-title {
+    font-size: var(--heading-size);
+    color:var(--backgroud_color_3);
+}
+.contact-info {
+
+}
+.same{
+  color: var(--backgroud_color_3);
+}
+
+.para1{
+  
+  width:181vh;
+}
+.section{
+    /* margin-top: 30px; */
+    
+}
+.section-title {
+    font-size: var(--heading-size);
+    font-weight: bold;
+    color:var(--backgroud_color_3);
+
+}
+.section-content {
+    /* margin-left: 20px; */
+
+}
+
+.section-content p {
+    margin: 0;
+}
+
+.exp-skill_sec{
+  margin:0 30px;
+  display:flex ;
+  justify-content: flex-start ;
+  gap: 20vh;
   margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  color: var(--backgroud_color_3);
 }
 
-/* Add additional styling as needed */
+footer{
+      background-color:var(--backgroud_color_2);
+      margin: 0px 30px;
+      border-radius: 10px;
+      height: 10vh;
+}
+
+footer img{
+  margin: 1rem 10px ;
+  height: 40px;
+  width: 40px;
+  filter: invert(20%);  
+
+}
